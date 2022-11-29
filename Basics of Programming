@@ -1,0 +1,122 @@
+namespace Exercise031
+{
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+ 
+         Console.WriteLine("Give a number:");
+         int input1 = Convert.ToInt32(Console.ReadLine());
+
+         
+         if(input1%2 == 0){
+             Console.WriteLine("It is even.");
+         }
+         else{
+             Console.WriteLine("It is odd.");
+         }
+         
+    }
+}
+}
+namespace Exercise032
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+    {
+      Console.WriteLine("Speak, friend, and enter!");
+      string name = Console.ReadLine();
+     
+      if (name == "Mellon")
+      {
+        Console.WriteLine("Welcome, friend");
+      }
+   
+    else
+    {
+      Console.WriteLine("They've got a cave troll!");
+    }
+    }
+  }
+}
+}
+namespace Exercise033
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("Give the first string:");
+      string input1 = Console.ReadLine();
+      Console.WriteLine("Give the second string:");
+      String input2 = Console.ReadLine();
+      if(input1 == input2)
+    {
+      Console.WriteLine("Echo!");
+    }
+    else
+    {
+      Console.WriteLine("Nope!");
+    }
+   
+    }
+  }
+}
+namespace Exercise034
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+       while (true)
+         {
+          Console.WriteLine("Do you want to continue?");
+           string message = Console.ReadLine();
+          if (message == "no")
+         {
+           break;
+        }
+           else
+           {
+         continue;
+           }
+         }
+    }
+   
+  }
+}  
+namespace Exercise035
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      while(true)
+      {
+      Console.WriteLine("Give a number:");
+      int input = Convert.ToInt32(Console.ReadLine());
+      if(input != 42)
+      {
+        continue;
+      }
+      else
+      {
+        break;
+      }
+ 
+ 
+    }
+  }
+}
+}
+
+
+
