@@ -117,6 +117,159 @@ namespace Exercise035
   }
 }
 }
+namespace Exercise036
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            while (true)    
+            {
+                Console.WriteLine("Give a number:");
+                int number = Convert.ToInt32(Console.ReadLine());      
+                if (number == 0)
+                {
+                    break;
+                }
+                if (number < 0)
+                {
+                    Console.WriteLine("That is negative");
+                    continue;}
+                if(number > 0)
+                {
+                  number=number*number;
+                  Console.WriteLine(number);
+                  continue;
+                }
+                }
+
+            }
+        }
+    }
+    namespace Exercise037
+{
+  using System;
+  public class Program
+  {
+      public static void Main(string[] args)
+        {
+          int number= 0;
+ 
+            while (true)
+            {
+                Console.WriteLine("Give a number:");
+                int number1 = Convert.ToInt32(Console.ReadLine());
+                if (number1 == 0)
+                {
+                   break;
+                }
+                else
+                {
+                  number=number+1;
+                }
+ 
+               
+            }
+ 
+            Console.WriteLine("Total amount of numbers: " + number);
+ 
+        }
+    }
+}
+namespace Exercise038
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+     int number= 0;
+ 
+            while (true)
+            {
+                Console.WriteLine("Give a number:");
+                int number1 = Convert.ToInt32(Console.ReadLine());
+                if (number1 < 0)
+                {
+                  number=number+1;
+                   
+                }
+                else if (number1>0)
+                {
+                  continue;
+                }
+                else
+                {
+                  break;
+                }
+ 
+               
+            }
+ 
+            Console.WriteLine("Total amount of negative numbers: " + number);
+    }
+  }
+}
+namespace Exercise039
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      int s = 0;
+      while (true)
+      {
+        Console.WriteLine("Give a number:");
+        int input = Convert.ToInt32(Console.ReadLine());
+       if(input != 0)
+        { s += input; }
+      else
+       {
+        break;
+        }
+     }
+Console.WriteLine("Total sum of numbers: " + s);
+      }
+    }
+  }
+
+namespace Exercise040
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {   int sum=0;
+      int number1=0;
+       while (true)
+            {
+                Console.WriteLine("Give a number:");
+                int number = Convert.ToInt32(Console.ReadLine());
+                if (number == 0)
+                {
+                   break;
+                }
+                else
+                {
+                  sum=sum+number;
+                  number1=number1+1;
+                 
+                }
+               
+ 
+               
+            }
+            Console.WriteLine("Total sum of numbers: " + sum);
+            Console.WriteLine("Total amount of numbers: " + number1);
+           
+ 
+    }
+  }
+}
+
+
 
 
 
