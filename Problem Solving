@@ -1,0 +1,295 @@
+namespace Exercise010
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("How many times?");
+        int i=0;
+        int input1 = Convert.ToInt32(Console.ReadLine());
+        while(i != input1 )
+        {
+            PrintPhrase();
+            i++;
+        }
+        
+    }
+    
+    public static void PrintPhrase()
+    {
+        Console.WriteLine ("In a hole in the ground there lived a method");
+    }
+}
+ 
+}
+namespace Exercise011
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("Give a number!");
+        int input1 = Convert.ToInt32(Console.ReadLine());
+        PrintUntilNumber(input1);
+       
+        
+    }
+    
+    public static void PrintUntilNumber(int n)
+    {
+        for(int i=1;i<=n ;i++)
+        {
+            Console.WriteLine (i);
+        }
+    }
+}
+}
+namespace Exercise012
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+     Console.WriteLine("Give a number!");
+        int input1 = Convert.ToInt32(Console.ReadLine());
+        PrintFromNumberToOne(input1);
+       
+        
+    }
+    
+    public static void PrintFromNumberToOne(int n)
+    {
+        for(int i=n;i>=1 ;i--)
+        {
+            Console.WriteLine (i);
+        }
+    }
+}
+}
+namespace Exercise013
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("Give a number!");
+        int input1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Give a number!");
+        int input2 = Convert.ToInt32(Console.ReadLine());
+        Division(input1, input2);
+       
+        
+    }
+    public static void Division(int numerator, int denominator)
+    {
+        Console.WriteLine((double)numerator / denominator);
+    }
+    
+ 
+}
+}
+namespace Exercise014
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("Give a number!");
+        int input1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Give a number!");
+        int input2 = Convert.ToInt32(Console.ReadLine());
+        DivisibleByThreeInRange(input1, input2);
+       
+        
+    }
+    public static void DivisibleByThreeInRange(int beginning, int end)
+    {
+        for(int i=beginning; i<=end ; i++)
+        {
+            if(i%3 == 0)
+            {
+               Console.WriteLine(i); 
+            }
+        }
+    }
+    
+ 
+}
+}
+ namespace Exercise015
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    { 
+      Console.WriteLine(NumberUno());
+ 
+       
+        
+    }
+    public static int NumberUno()
+    {
+        return 1;
+    }
+    
+ 
+}
+}
+namespace Exercise017
+{
+  using System;
+  public class Program
+  {
+
+    public static int Sum(int number1, int number2, int number3, int number4)
+    {
+      
+    return number1 + number2 + number3 + number4;
+  
+  }
+     
+     public static void Main(string[] args)
+     {
+      int answer = Sum(4, 3, 6, 1);
+      Console.WriteLine("Sum: " + answer);
+     }
+  }
+}
+
+namespace Exercise018
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+       int answer = Smallest(2, 7);
+        Console.WriteLine ("Smallest: " + answer);
+        
+       
+        
+    }
+    public static int Smallest(int n, int m)
+    {
+        if(n<m)
+        {
+            return n;
+        }
+        else
+        {
+            return m;
+        }
+        
+    }
+    
+ 
+}
+}
+ 
+namespace Exercise019
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      int answer = Greatest(5, 7, 3);
+      Console.WriteLine("Greatest: " + answer);
+    }
+      
+    public static int Greatest(int a, int b,int c)
+    {
+        if(a>b && a>c)
+        {
+            return a;
+        }
+        else if(b>a && b>c)
+        {
+            return b;
+        }
+        
+        else if(c>a && c>b)
+        {
+            return c;
+        }
+        
+        else
+        {
+            return a;
+        }
+        
+    
+    
+ 
+}
+ 
+  }
+}
+namespace Exercise020
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+       PrintStars(5);
+Console.Write("hello");
+        
+       
+        
+    }
+ public static void PrintStars(int n){
+     int i=0;
+       while(i != n){
+           Console.Write("*");
+           i++;
+       }
+       Console.Write("\n");
+       
+       
+ 
+ 
+   }
+ 
+ public static void PrintSquare(int size){
+       for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+          Console.Write("*");
+        }
+        Console.WriteLine();
+        
+      }
+   }
+ 
+ 
+    public static void PrintRectangle(int width,int height){
+       for (int i = 1; i <= height; i++) {
+        for (int j = 1; j <= width; j++) {
+          Console.Write("*");
+        }
+        Console.WriteLine();
+      }
+   }
+ 
+public static void PrintTriangle(int size){
+       for (int i = 1; i <= size; i++)
+        {
+            for (int j = 1; j <= i; j++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n");
+        }
+   }
+    
+ 
+}
+}
+       
+        
